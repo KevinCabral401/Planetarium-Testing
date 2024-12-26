@@ -8,12 +8,12 @@ Feature: Remove planets and moons to the planetarium database
     When the user selects the planet option
     And the user inputs valid planet name to be deleted
     And submits the data to be deleted
-    Then the home table should refresh with planetary data removed
+    Then the home table should refresh with planetary data removed 1
 
   Scenario: User can remove moon from table
     When the user inputs valid moon name to be deleted
     And submits the data to be deleted
-    Then the home table should refresh with planetary data removed
+    Then the home table should refresh with planetary data removed 2
 
 
   Scenario Outline: User can not remove planet from table

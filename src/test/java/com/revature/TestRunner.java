@@ -23,7 +23,7 @@ import java.time.Duration;
 @CucumberOptions(
         features = "classpath:features",
         glue = "com.revature.steps",
-        plugin = {"pretty", "html:src/test/resources/reports/html-report.html"}
+        plugin = {"pretty", "html:src/test/resources/reports/html-report.html", "json:src/test/resources/reports/json-report.json"}
 )
 public class TestRunner {
     public static WebDriver driver = null;

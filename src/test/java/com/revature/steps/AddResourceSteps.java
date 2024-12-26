@@ -25,6 +25,11 @@ public class AddResourceSteps {
         TestRunner.homePage.inputValidPlanetName();
     }
 
+    @When("the user selects the planet option")
+    public void the_user_selects_the_planet_option() {
+        TestRunner.homePage.selectPlanet();
+    }
+
     @When("the user inputs valid planet name jpg")
     public void the_user_inputs_valid_planet_name_jpg() {
         TestRunner.homePage.inputValidPlanetNameJpg();
@@ -59,9 +64,9 @@ public class AddResourceSteps {
     @Then("the home table should refresh with the newly added moon input")
     public void the_home_table_should_refresh_with_the_newly_added_moon_input() {
         WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(3));
-        wait.until(driver -> TestRunner.homePage.getNumberOfCelestialRows() == 8);
+        wait.until(driver -> TestRunner.homePage.getNumberOfCelestialRows() == 7);
 
-        Assert.assertEquals(8, TestRunner.homePage.getNumberOfCelestialRows());
+        Assert.assertEquals(7, TestRunner.homePage.getNumberOfCelestialRows());
     }
 
     @When("the user inputs valid moon name")
@@ -77,9 +82,9 @@ public class AddResourceSteps {
     @Then("the home table should refresh with the newly added moon input png")
     public void the_home_table_should_refresh_with_the_newly_added_moon_input_png() {
         WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(3));
-        wait.until(driver -> TestRunner.homePage.getNumberOfCelestialRows() == 7);
+        wait.until(driver -> TestRunner.homePage.getNumberOfCelestialRows() == 8);
 
-        Assert.assertEquals(7, TestRunner.homePage.getNumberOfCelestialRows());
+        Assert.assertEquals(8, TestRunner.homePage.getNumberOfCelestialRows());
     }
 
     @When("the user inputs valid planet id")
