@@ -1,0 +1,78 @@
+﻿Planetarium Acceptance Testing
+
+
+User Story 1: As a new user I want to open an account with the Planetarium so I can save my celestial findings
+
+
+Overall I think the user registration process is fairly intuitive and easy to use, I would maybe make the link for registering a little bigger as it may be hard to see for some users. I appreciate the confidence in knowing that the password is not visible when typing, however it would be nice to have one of those “eye” buttons that allows you to temporarily see the password to ensure you have typed what you thought. In addition maybe another password input to confirm the passwords are the same. Lastly it does look fairly dull, I would say it looks bad or messy but maybe liven it up with a celestial theme. 
+
+
+Grade: 
+3
+Rationale: 1 defect discovered, lack of alert for non-unique usernames
+
+
+User Story 2: As a user I want to securely access my account so I can interact with the Planetarium in a secure environment
+
+
+Overall I think the user login process is fairly intuitive and easy to use. I appreciate the confidence in knowing that the password is not visible when typing, however it would be nice to have one of those “eye” buttons that allows you to temporarily see the password to ensure you have typed what you thought. Lastly it does look fairly dull, I would say it looks bad or messy but maybe liven it up with a celestial theme. 
+
+
+Grade:
+4
+Rationale: No defects discovered and minimal issues with accessibility. 
+
+
+User Story 3: As a user I want to see my planets and moons added to the Planetarium so I can track my findings
+
+
+Logging in and viewing the home page is very intuitive and presents itself well. For an enterprise level application I would maybe update the styling but for a simple web app project on a budget I think it is visually appealing. Only recommendation is to make the logout button more accessible by making it bigger and removing it from the corner. In addition perhaps placing the delete line of input below the addition line of input as several times I went to add a new planet/moon only to realise I had typed in the wrong field. Another small issue is please capitalize the celestial type in the rows, to appease proper grammar.
+
+
+Grade: 
+4
+Rationale: No defects discovered and minimal issues with accessibility
+User Story 4: As a user I want to add new planets and moons to the Planetarium so I can update my findings
+
+
+I think the process of adding new planets/moons is very intuitive and easy to use, its not the best thing to look at but it definitely serves its functionality. Also if there is a lack of image file it would be nice to remove the icon that represents the file could not be found There were some defects discovered relating to non-unique names and issues with file types, where an alert was missing or non existent, this definitely brings down the score especially for accessibility reasons
+
+
+Grade:
+2
+Rationale: Multiple defects discovered and not very pleasing to the eye.
+
+
+
+
+User Story 5: As a user I want to remove planets and moons from the Planetarium so I can correct my findings
+
+
+I think the process of deleting planets/moons is fairly intuitive and easy to use, its not the best thing to look at but it definitely serves its functionality. I would recommend maybe having another select dropdown to specify adding or deleting celestial bodies as it would clear up space, remove some input fields and reduce confusion when typing planet names into multiple fields. 
+
+
+Grade:
+3
+Rationale: No defects discovered but can cause some confusion. 
+
+
+
+
+
+
+
+
+Sprint Retrospective:
+
+
+What went well
+* General coding/setup - I liked the organization of feature files, steps and pom
+* Never had an issue finding any WebElements
+
+
+Where I struggled and things to do better
+* Need to be better at utilizing waits and handling unexpected outcomes
+* Need to use hooks and have better setup and teardowns
+* Next time actually open up the application and test things myself just to get an understanding of where things might go wrong
+* Found myself constantly changing or adding new Acceptance criteria, found that my Scenarios were not specific enough for what I was testing Ex, adding planets without images
+* Overthinking Test Data, was considering what the Database was going to see and not what the actual user was going to input. Ex, deleting planets/moons, i thought i needed to include planet/moon ids as well.
